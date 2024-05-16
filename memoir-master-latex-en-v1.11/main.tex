@@ -1,0 +1,50 @@
+\documentclass{masterthesis-uc2-en} 
+
+%% Metadata
+\department{Department of Fundamental Computing and its Applications (IFA)}
+\specialty{Sciences and Technologies of Information and Communication (STIC)}
+\title{Thesis title} 
+\studentFullnameA{Full name of student 1}
+\studentFullnameB{Full name of student 2}  % Optional
+\supervisorFullnameA{Full name of supervisor 1}
+\supervisorFullnameB{Full name of supervisor 2}  % Optional
+\session{June 2022}
+
+%% Additional commands
+\input{macros}
+
+\begin{document}
+
+
+\frontmatter
+	\maketitlepage
+	\pagestyle{plain}
+	\include{front/acknowledgments}
+	\include{front/dedicate}  % Optional
+	
+	\addcontentsline{toc}{chapter}{Abstracts}
+	\input{front/abstract_ar} 
+	\input{front/abstract_en}
+	\input{front/abstract_fr}
+	\clearpage
+	
+	\tableofcontents
+	\listoffigures
+	\listoftables
+	\listofalgorithms  % Optional
+
+\mainmatter
+	\pagestyle{fancy}
+	\include{chapters/introduction}
+	\include{chapters/state_of_the_art}
+	\include{chapters/contributions}
+	\include{chapters/conclusion}
+
+	\include{chapters/template} % To remove in final version
+	
+\backmatter
+	\bibliographystyle{unsrtnat}
+	\bibliography{bibliography}
+	\include{front/acronyms}
+
+\end{document}
